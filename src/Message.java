@@ -54,7 +54,7 @@ public class Message implements Runnable {
         stopFlag = true;
         return;
     }
-
+/*(
     public static void displayMessage(Message jm) throws InterruptedException {
         for (int i = 0; i < jm.message.length(); i++) {
             System.out.print(jm.message.charAt(i));
@@ -62,14 +62,14 @@ public class Message implements Runnable {
         }
         System.out.println();
     }
-
-/*       public static synchronized void displayMessage(Message jm) throws InterruptedException {
+*/
+     public static synchronized void displayMessage(Message jm) throws InterruptedException {
       for (int i = 0; i < jm.message.length(); i++) {
          System.out.print(jm.message.charAt(i));
          Thread.currentThread().sleep(200);
       }
       System.out.println();
-   }*/
+   }
 
  /*  private final static Object sharedLock = new Object();
 
